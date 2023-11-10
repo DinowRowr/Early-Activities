@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Dino's Website</title>
+        <style>
+            ul {
+                list-style-position: inside;
+                position: relative; right: 30px;
+                font-size: large;
+            }
+
+            .me {
+                border-radius: 50%;
+                border-style: groove;
+                
+                box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	        transform: scale(1);
+	        animation: pulse 3s infinite;
+            }
+            @keyframes pulse {
+	            0% {
+	            	transform: scale(0.95);
+	            }
+
+	            70% {
+		            transform: scale(1);
+	            }
+
+	            100% {
+	            	transform: scale(0.95);
+	            }
+            }
+
+            h3 {
+                font-size: x-large;
+            }
+
+            .fb {
+                margin-top: 3%;
+            }
+            center {
+                margin-top: 8%;
+            }
+
+        </style>
+    </head>
+
+    <body bgcolor="Black">
+        <center>
+        <font color="White">
+            <h1><u>Welcome to My Page!</u></h1>
+            <img class="me" src="me.jpg" alt="PictureOfMe" width="250">
+            <h3>Home</h3>
+            <ul>
+                <li><a href="Aboutme.html">About me</a></li>
+                <p></p>
+                <li><a href="Favorites.html">Favorites</a></li>
+            </ul>
+        </font>
+        </center>
+
+        <font>
+            <a href="https://www.facebook.com/dinothelo.quiroga" target="_blank"><img class="fb" src="fb.png" alt="My facebook" width="50"></a> <a href="https://www.instagram.com/dinothelow" target="_blank"><img class="fb" src="insta.png" alt="My instagram" width="45"></a> <a href="https://www.tiktok.com/@dinowrwr" target="_blank"><img class="fb" src="tiktok.png" alt="My tiktok" width="50"></a>
+        </font>
+    </body>
+</html>
