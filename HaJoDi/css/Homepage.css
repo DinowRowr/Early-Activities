@@ -1,0 +1,120 @@
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('../img/background.jpg');
+    background-size: cover;
+}
+.navBar {
+    padding: 35px 0;
+    float: right;
+    margin-right: 5%;
+    
+}
+.navBar ul li {
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navBar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+}
+.navBar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #cf1e1e;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navBar ul li:hover::after{
+    width: 100%;
+}
+.me {
+    margin-top: -3%;
+    border-radius: 50%;
+    border-style: groove;
+    margin-left: 38%;
+    
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+    transform: scale(1);
+    animation: pulse 3s infinite;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+    }
+
+    70% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.95);
+    }
+}
+.intro {
+    position: absolute;
+    top: 32%;
+    margin-left: 33%;
+}
+
+.animate-in {
+    -webkit-animation: fadeIn .5s ease-in;
+    animation: fadeIn .5s ease-in;
+}
+.animate-out {
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+    opacity: 0;
+}
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #cf1e1e;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin-top: 12%;
+    margin-left: 43.3%;
+}
+span {
+    background: #cf1e1e;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span {
+    width: 100%;
+}
+button:hover {
+    border: none;
+}
+.menu {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase; 
+}

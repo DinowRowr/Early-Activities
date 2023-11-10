@@ -1,0 +1,134 @@
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('../img/background.jpg');
+    background-size: cover;
+}
+.navBar {
+    padding: 35px 0;
+    float: right;
+    margin-right: 5%;
+
+}
+.navBar ul li {
+    font-family: 'Times New Roman', Times, serif;
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navBar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navBar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #cf1e1e;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navBar ul li:hover::after{
+    width: 100%;
+}
+.me {
+    position: absolute;
+    border-radius: 50%;
+    border-style: groove;
+    top: 25%;
+    left: 7%;
+    
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+    transform: scale(1);
+    animation: pulse 3s infinite;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+    }
+
+    70% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.95);
+    }
+}
+.animate-in {
+    -webkit-animation: fadeIn .5s ease-in;
+    animation: fadeIn .5s ease-in;
+}
+.animate-out {
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+    opacity: 0;
+}
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.title1{
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    background-color: #d9a404;
+    padding: 15px;
+    width: 10.5%;
+    top: 10%;
+    left: 38%;
+    z-index: 1;
+}
+.first{
+    position: absolute;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 20%;
+    left: 40%;
+    border: 1px solid #fff;
+    padding: 20px 15px 5px;
+}
+.about{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #fff;
+    text-align:justify;
+    text-justify: inter-word;
+    text-indent: 45px;
+    line-height: 25px;   
+}
+.title2{
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    background-color: #d9a404;
+    padding: 15px;
+    width: 14.5%;
+    top: 55%;
+    left: 38%;
+    z-index: 1;
+}
+.second{
+    position: absolute;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 65%;
+    left: 40%;
+    border: 1px solid #fff;
+    padding: 20px 25px 10px;
+}
+.services{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #fff;
+    text-align:justify;
+    text-justify: auto;
+    text-indent: 45px;
+    line-height: 25px;
+}
